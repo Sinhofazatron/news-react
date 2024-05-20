@@ -7,9 +7,10 @@
     "start:server": "node ./json-server/index.js",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "unit": "jest --config ./config/jest/jest.config.ts",
+    "test": "jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build -c ./config/storybook"
+    "build-storybook": "storybook build -c ./config/storybook",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -71,6 +72,7 @@
     "@reduxjs/toolkit": "^1.8.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/webpack-dev-server": "^4.7.2",
+    "axios": "^0.26.1",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
